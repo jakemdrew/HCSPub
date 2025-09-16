@@ -1,19 +1,19 @@
-HashChainStream & HCA Reference — Private / Not for Public Use
+# HashChainStream & HCA Reference — Private / Not for Public Use
 
-NOTICE: This repository is private and the code is not licensed for public use.
+**NOTICE:** This repository is private and the code is not licensed for public use.
 No permission is granted to copy, distribute, modify, or use any portion of this work.
 All rights reserved © Jacob Michael Drew.
 
-Overview
+## Overview
 
 This repository contains reference embodiments related to HashChainStream (HCS) and Hash-Chain Augmentation (HCA) data structures (e.g., radix/HAMT-style maps and anchor dictionaries).
 The code implements prefix-stable, random-access, domain-separated hash streams and self-healing indexing policies.
 
-Status & Access
+## Status & Access
 
-License: No open-source license is granted. All rights reserved.
+**License:** No open-source license is granted. All rights reserved.
 
-Use: Internal evaluation only. Do not share binaries, source, docs, or artifacts.
+**Use:** Internal evaluation only. Do not share binaries, source, docs, or artifacts.
 
 Redistribution: Prohibited.
 
