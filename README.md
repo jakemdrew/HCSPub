@@ -50,6 +50,10 @@ Jacob Michael Drew • jakemdrew@gmail.com
 
 **Support:** The invention enables prefix stability, domain separation, and extendable entropy generation suitable for self-healing data structures, verifiable addressing, cryptographic primitives, and large-scale indexing.
 
+### Patent 7 (U.S. Provisional No. 63/885,876) —  Systems and Methods for Modification of Block Chains and Hash Based Data Structures Using Hash Chain Augmentation
+
+**Support:** HCA relates to hash-based in-memory and persistent data structures, concurrent key-value indexing, and fault-tolerant state management for distributed systems including blockchain nodes.
+
 ## Usage Restrictions
 
 No license granted. You may not reproduce, distribute, sublicense, or create derivative works.
