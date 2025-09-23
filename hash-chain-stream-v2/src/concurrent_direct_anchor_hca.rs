@@ -125,9 +125,9 @@ mod tests {
     fn single_thread_api_parity() {
         let mut h = ConcurrentDirectAnchorHca::<String, i32>::with_default_config();
         assert_eq!(h.insert("a".into(), 1).unwrap(), None);
-        assert!(got_equals(h.get(&"a".into()).cloned(), 1));
+        assert!(got_equals(h.get(&"a".into()), 1));
         assert_eq!(h.insert("a".into(), 2).unwrap(), Some(1));
-        assert!(got_equals(h.get(&"a".into()).cloned(), 2));
+        assert!(got_equals(h.get(&"a".into()), 2));
         assert_eq!(h.remove(&"a".into()), Some(2));
         assert!(h.get(&"a".into()).is_none());
     }
@@ -161,7 +161,7 @@ mod tests {
         // Verify presence
         for i in 0..(N * PER) {
             let k = format!("k{:08}", i);
-            let got = h.get(&k).cloned();
+            let got = h.get(&k);
             assert!(got_equals(got, i), "missing key {}", k);
         }
     }
@@ -207,7 +207,7 @@ mod tests {
 
         // Basic usability after stress
         let _ = h.insert("final".into(), 42).unwrap();
-        assert!(got_equals(h.get(&"final".into()).cloned(), 42));
+        assert!(got_equals(h.get(&"final".into()), 42));
         assert_eq!(h.remove(&"final".into()), Some(42));
     }
 }
