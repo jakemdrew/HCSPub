@@ -38,7 +38,7 @@ Jacob Michael Drew • jakemdrew@gmail.com
 
 **Support:** HCS provides a canonical, versioned namespace (via person tags) to bind semantic footers to deterministic addresses. This ensures footer metadata and derived views remain verifiably tied to stable prefixes, enabling in-situ introspection and consistent aliasing across evolutions.
 
-### Patent 4 (U.S. Provisional No. 63/849,997) — Decentralized, self-healing indexing where indices are reproducible views from embedded footers.
+### Patent 4 (U.S. Provisional No. 63/854,878) — Decentralized, self-healing indexing where indices are reproducible views from embedded footers.
 
 **Support:** With HCS, index materialization becomes a deterministic function of the keys and footers: anchors/partitions are independently reconstructible without global scans, and damaged shards are repaired by recomputing only the affected (depth, prefix) regions. This realizes the family’s decentralized, resilient self-healing architecture.
 
