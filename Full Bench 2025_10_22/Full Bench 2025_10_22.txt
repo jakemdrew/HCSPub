@@ -1,0 +1,814 @@
+lookup/simple_chained_hash_map/10000
+                        time:   [192.20 µs 192.66 µs 193.17 µs]
+                        thrpt:  [51.768 Melem/s 51.905 Melem/s 52.030 Melem/s]
+                 change:
+                        time:   [-2.8368% -2.2480% -1.6339%] (p = 0.00 < 0.05)
+                        thrpt:  [+1.6610% +2.2997% +2.9197%]
+                        Performance has improved.
+lookup/simple_chained_hash_map/100000
+                        time:   [2.5694 ms 2.6217 ms 2.6861 ms]
+                        thrpt:  [37.228 Melem/s 38.143 Melem/s 38.919 Melem/s]
+                 change:
+                        time:   [-4.6109% -1.4196% +1.9775%] (p = 0.42 > 0.05)
+                        thrpt:  [-1.9391% +1.4400% +4.8338%]
+                        No change in performance detected.
+Found 5 outliers among 30 measurements (16.67%)
+  1 (3.33%) high mild
+  4 (13.33%) high severe
+lookup/simple_chained_hash_map/1000000
+                        time:   [104.00 ms 104.36 ms 104.87 ms]
+                        thrpt:  [9.5358 Melem/s 9.5826 Melem/s 9.6156 Melem/s]
+                 change:
+                        time:   [-0.7281% +0.3852% +1.2064%] (p = 0.54 > 0.05)
+                        thrpt:  [-1.1921% -0.3838% +0.7335%]
+                        No change in performance detected.
+Found 4 outliers among 10 measurements (40.00%)
+  2 (20.00%) low severe
+  2 (20.00%) high severe
+lookup/simple_chained_hash_map/10000000
+                        time:   [1.1795 s 1.1800 s 1.1805 s]
+                        thrpt:  [8.4710 Melem/s 8.4744 Melem/s 8.4781 Melem/s]
+                 change:
+                        time:   [-0.8058% -0.3227% +0.0786%] (p = 0.22 > 0.05)
+                        thrpt:  [-0.0785% +0.3238% +0.8124%]
+                        No change in performance detected.
+lookup/simple_chained_hash_map/25000000
+                        time:   [3.5554 s 3.5607 s 3.5697 s]
+                        thrpt:  [7.0034 Melem/s 7.0211 Melem/s 7.0315 Melem/s]
+                 change:
+                        time:   [+0.1579% +0.4260% +0.7574%] (p = 0.01 < 0.05)
+                        thrpt:  [-0.7517% -0.4241% -0.1577%]
+                        Change within noise threshold.
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high severe
+
+insertion/simple_chained_hash_map/10000
+                        time:   [1.2019 ms 1.2139 ms 1.2273 ms]
+                        thrpt:  [8.1479 Melem/s 8.2377 Melem/s 8.3199 Melem/s]
+                 change:
+                        time:   [-6.5967% -5.3887% -4.0650%] (p = 0.00 < 0.05)
+                        thrpt:  [+4.2372% +5.6957% +7.0626%]
+                        Performance has improved.
+Found 1 outliers among 30 measurements (3.33%)
+  1 (3.33%) high mild
+insertion/simple_chained_hash_map/100000
+                        time:   [14.919 ms 15.009 ms 15.107 ms]
+                        thrpt:  [6.6196 Melem/s 6.6625 Melem/s 6.7027 Melem/s]
+                 change:
+                        time:   [+0.0516% +0.9289% +1.8239%] (p = 0.05 > 0.05)
+                        thrpt:  [-1.7912% -0.9203% -0.0516%]
+                        No change in performance detected.
+insertion/simple_chained_hash_map/1000000
+                        time:   [303.27 ms 303.70 ms 304.13 ms]
+                        thrpt:  [3.2881 Melem/s 3.2928 Melem/s 3.2974 Melem/s]
+                 change:
+                        time:   [-1.1414% -0.8706% -0.5968%] (p = 0.00 < 0.05)
+                        thrpt:  [+0.6003% +0.8783% +1.1545%]
+                        Change within noise threshold.
+insertion/simple_chained_hash_map/10000000
+                        time:   [3.8912 s 3.9057 s 3.9238 s]
+                        thrpt:  [2.5485 Melem/s 2.5604 Melem/s 2.5699 Melem/s]
+                 change:
+                        time:   [-1.2593% -0.6119% +0.0504%] (p = 0.11 > 0.05)
+                        thrpt:  [-0.0504% +0.6156% +1.2754%]
+                        No change in performance detected.
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high mild
+Benchmarking insertion/simple_chained_hash_map/25000000: Warming up for 5.0000 s
+Warning: Unable to complete 10 samples in 120.0s. You may wish to increase target time to 244.5s.
+insertion/simple_chained_hash_map/25000000
+                        time:   [12.658 s 12.707 s 12.761 s]
+                        thrpt:  [1.9590 Melem/s 1.9674 Melem/s 1.9751 Melem/s]
+                 change:
+                        time:   [-1.0401% -0.5129% +0.0355%] (p = 0.08 > 0.05)
+                        thrpt:  [-0.0355% +0.5155% +1.0510%]
+                        No change in performance detected.
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high mild
+
+Benchmarking mixed_workload/simple_chained_hash_map_mixed/10000: Collecting 30 samples in estimated 10.031 s (7440 iteramixed_workload/simple_chained_hash_map_mixed/10000
+                        time:   [1.1182 ms 1.1226 ms 1.1274 ms]
+                        thrpt:  [8.8701 Melem/s 8.9081 Melem/s 8.9428 Melem/s]
+                 change:
+                        time:   [-0.5461% +0.0372% +0.5530%] (p = 0.91 > 0.05)
+                        thrpt:  [-0.5500% -0.0372% +0.5491%]
+                        No change in performance detected.
+Found 1 outliers among 30 measurements (3.33%)
+  1 (3.33%) high mild
+Benchmarking mixed_workload/simple_chained_hash_map_mixed/100000: Collecting 30 samples in estimated 10.386 s (750 iteramixed_workload/simple_chained_hash_map_mixed/100000
+                        time:   [12.698 ms 12.796 ms 12.911 ms]
+                        thrpt:  [7.7453 Melem/s 7.8148 Melem/s 7.8753 Melem/s]
+                 change:
+                        time:   [-1.6698% -0.5575% +0.6142%] (p = 0.36 > 0.05)
+                        thrpt:  [-0.6104% +0.5606% +1.6982%]
+                        No change in performance detected.
+Found 7 outliers among 30 measurements (23.33%)
+  1 (3.33%) high mild
+  6 (20.00%) high severe
+Benchmarking mixed_workload/simple_chained_hash_map_mixed/1000000: Collecting 10 samples in estimated 46.339 s (140 itermixed_workload/simple_chained_hash_map_mixed/1000000
+                        time:   [309.24 ms 309.73 ms 310.11 ms]
+                        thrpt:  [3.2246 Melem/s 3.2287 Melem/s 3.2337 Melem/s]
+                 change:
+                        time:   [-0.5167% -0.3000% -0.1117%] (p = 0.01 < 0.05)
+                        thrpt:  [+0.1118% +0.3009% +0.5193%]
+                        Change within noise threshold.
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) low mild
+Benchmarking mixed_workload/simple_chained_hash_map_mixed/10000000: Collecting 10 samples in estimated 120.54 s (30 itermixed_workload/simple_chained_hash_map_mixed/10000000
+                        time:   [3.8515 s 3.8563 s 3.8610 s]
+                        thrpt:  [2.5900 Melem/s 2.5931 Melem/s 2.5964 Melem/s]
+                 change:
+                        time:   [-0.4512% -0.2450% -0.0324%] (p = 0.05 < 0.05)
+                        thrpt:  [+0.0324% +0.2456% +0.4533%]
+                        Change within noise threshold.
+Benchmarking mixed_workload/simple_chained_hash_map_mixed/25000000: Collecting 10 samples in estimated 219.43 s (20 itermixed_workload/simple_chained_hash_map_mixed/25000000
+                        time:   [10.766 s 10.780 s 10.793 s]
+                        thrpt:  [2.3163 Melem/s 2.3191 Melem/s 2.3221 Melem/s]
+                 change:
+                        time:   [-0.0946% +0.1294% +0.3480%] (p = 0.29 > 0.05)
+                        thrpt:  [-0.3468% -0.1293% +0.0947%]
+                        No change in performance detected.
+
+Benchmarking growth_behavior/simple_chained_hash_map_incremental_growth/10000: Collecting 30 samples in estimated 10.006growth_behavior/simple_chained_hash_map_incremental_growth/10000
+                        time:   [1.7644 ms 1.7740 ms 1.7837 ms]
+                        change: [+2.1819% +2.8177% +3.4728%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Benchmarking growth_behavior/simple_chained_hash_map_incremental_growth/100000: Collecting 30 samples in estimated 10.05growth_behavior/simple_chained_hash_map_incremental_growth/100000
+                        time:   [18.892 ms 18.956 ms 19.026 ms]
+                        change: [-0.2150% +0.3963% +1.0109%] (p = 0.21 > 0.05)
+                        No change in performance detected.
+Found 6 outliers among 30 measurements (20.00%)
+  6 (20.00%) high mild
+Benchmarking growth_behavior/simple_chained_hash_map_incremental_growth/1000000: Collecting 10 samples in estimated 45.5growth_behavior/simple_chained_hash_map_incremental_growth/1000000
+                        time:   [255.95 ms 257.46 ms 259.16 ms]
+                        change: [-11.402% -10.811% -10.190%] (p = 0.00 < 0.05)
+                        Performance has improved.
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high mild
+Benchmarking growth_behavior/simple_chained_hash_map_incremental_growth/10000000: Collecting 10 samples in estimated 151growth_behavior/simple_chained_hash_map_incremental_growth/10000000
+                        time:   [3.7396 s 3.7494 s 3.7609 s]
+                        change: [+5.2347% +5.6576% +6.1188%] (p = 0.00 < 0.05)
+                        Performance has regressed.
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high mild
+Benchmarking growth_behavior/simple_chained_hash_map_incremental_growth/25000000: Collecting 10 samples in estimated 179growth_behavior/simple_chained_hash_map_incremental_growth/25000000
+                        time:   [9.0228 s 9.0458 s 9.0691 s]
+                        change: [-90.061% -90.032% -90.004%] (p = 0.00 < 0.05)
+                        Performance has improved.
+
+Benchmarking recovery/simple_chained_hash_map_reconstruction/10000: Collecting 30 samples in estimated 10.003 s (87k iterecovery/simple_chained_hash_map_reconstruction/10000
+                        time:   [112.27 µs 112.52 µs 112.81 µs]
+                        change: [-3.0943% -2.7053% -2.2964%] (p = 0.00 < 0.05)
+                        Performance has improved.
+Found 5 outliers among 30 measurements (16.67%)
+  2 (6.67%) high mild
+  3 (10.00%) high severe
+Benchmarking recovery/simple_chained_hash_map_reconstruction/100000: Collecting 30 samples in estimated 10.021 s (7620 irecovery/simple_chained_hash_map_reconstruction/100000
+                        time:   [1.2857 ms 1.2942 ms 1.3045 ms]
+                        change: [+0.3767% +1.4845% +2.6497%] (p = 0.01 < 0.05)
+                        Change within noise threshold.
+Found 4 outliers among 30 measurements (13.33%)
+  4 (13.33%) high severe
+Benchmarking recovery/simple_chained_hash_map_reconstruction/1000000: Collecting 10 samples in estimated 45.177 s (720 irecovery/simple_chained_hash_map_reconstruction/1000000
+                        time:   [62.807 ms 63.156 ms 63.499 ms]
+                        change: [-2.2521% -1.5874% -0.8852%] (p = 0.00 < 0.05)
+                        Change within noise threshold.
+Benchmarking recovery/simple_chained_hash_map_reconstruction/10000000: Collecting 10 samples in estimated 125.53 s (210 recovery/simple_chained_hash_map_reconstruction/10000000
+                        time:   [592.17 ms 593.30 ms 594.52 ms]
+                        change: [-1.1924% -0.8362% -0.5007%] (p = 0.00 < 0.05)
+                        Change within noise threshold.
+Benchmarking recovery/simple_chained_hash_map_reconstruction/25000000: Collecting 10 samples in estimated 120.67 s (110 recovery/simple_chained_hash_map_reconstruction/25000000
+                        time:   [1.0865 s 1.0881 s 1.0898 s]
+                        change: [-0.9770% -0.7331% -0.4285%] (p = 0.00 < 0.05)
+                        Change within noise threshold.
+
+
+Warning: It is not recommended to reduce nresamples below 1000.
+Benchmarking insertion/chained_hash_map_par_separated_t2/10000: Collecting 25 samples in estimated 4.0292 s (2025 iteratinsertion/chained_hash_map_par_separated_t2/10000
+                        time:   [1.6824 ms 1.6913 ms 1.6987 ms]
+                        thrpt:  [5.8868 Melem/s 5.9126 Melem/s 5.9437 Melem/s]
+                 change:
+                        time:   [+0.2557% +2.4773% +3.4367%] (p = 0.00 < 0.05)
+                        thrpt:  [-3.3225% -2.4175% -0.2550%]
+                        Change within noise threshold.
+Found 3 outliers among 25 measurements (12.00%)
+  1 (4.00%) low severe
+  2 (8.00%) high mild
+
+Warning: It is not recommended to reduce nresamples below 1000.
+Benchmarking insertion/chained_hash_map_par_separated_t4/10000: Collecting 25 samples in estimated 4.0158 s (2450 iteratinsertion/chained_hash_map_par_separated_t4/10000
+                        time:   [1.3068 ms 1.3170 ms 1.3289 ms]
+                        thrpt:  [7.5253 Melem/s 7.5929 Melem/s 7.6520 Melem/s]
+                 change:
+                        time:   [+3.3392% +3.9092% +5.3021%] (p = 0.00 < 0.05)
+                        thrpt:  [-5.0352% -3.7621% -3.2313%]
+                        Performance has regressed.
+Found 3 outliers among 25 measurements (12.00%)
+  2 (8.00%) high mild
+  1 (4.00%) high severe
+
+Warning: It is not recommended to reduce nresamples below 1000.
+Benchmarking insertion/chained_hash_map_par_separated_t8/10000: Collecting 25 samples in estimated 7.0156 s (4450 iteratinsertion/chained_hash_map_par_separated_t8/10000
+                        time:   [1.2945 ms 1.2964 ms 1.2991 ms]
+                        thrpt:  [7.6977 Melem/s 7.7134 Melem/s 7.7250 Melem/s]
+                 change:
+                        time:   [-1.0701% -0.1731% +0.5055%] (p = 0.73 > 0.05)
+                        thrpt:  [-0.5030% +0.1734% +1.0817%]
+                        No change in performance detected.
+
+Warning: It is not recommended to reduce nresamples below 1000.
+Benchmarking insertion/chained_hash_map_par_separated_t16/10000: Collecting 25 samples in estimated 10.000 s (5775 iterainsertion/chained_hash_map_par_separated_t16/10000
+                        time:   [1.4328 ms 1.4373 ms 1.4430 ms]
+                        thrpt:  [6.9299 Melem/s 6.9573 Melem/s 6.9794 Melem/s]
+                 change:
+                        time:   [-1.0389% -0.3757% +0.5393%] (p = 0.20 > 0.05)
+                        thrpt:  [-0.5364% +0.3771% +1.0499%]
+                        No change in performance detected.
+
+Warning: It is not recommended to reduce nresamples below 1000.
+Benchmarking insertion/chained_hash_map_par_separated_t2/100000: Collecting 10 samples in estimated 6.1097 s (380 iteratinsertion/chained_hash_map_par_separated_t2/100000
+                        time:   [14.982 ms 15.016 ms 15.074 ms]
+                        thrpt:  [6.6341 Melem/s 6.6596 Melem/s 6.6747 Melem/s]
+                 change:
+                        time:   [-9.4849% -8.6744% -7.5147%] (p = 0.00 < 0.05)
+                        thrpt:  [+8.1253% +9.4984% +10.479%]
+                        Performance has improved.
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high mild
+
+Warning: It is not recommended to reduce nresamples below 1000.
+Benchmarking insertion/chained_hash_map_par_separated_t4/100000: Collecting 10 samples in estimated 6.0739 s (490 iteratinsertion/chained_hash_map_par_separated_t4/100000
+                        time:   [11.544 ms 11.592 ms 11.635 ms]
+                        thrpt:  [8.5949 Melem/s 8.6264 Melem/s 8.6626 Melem/s]
+                 change:
+                        time:   [-12.319% -11.658% -11.294%] (p = 0.00 < 0.05)
+                        thrpt:  [+12.732% +13.197% +14.050%]
+                        Performance has improved.
+
+Warning: It is not recommended to reduce nresamples below 1000.
+Benchmarking insertion/chained_hash_map_par_separated_t8/100000: Collecting 10 samples in estimated 9.0952 s (870 iteratinsertion/chained_hash_map_par_separated_t8/100000
+                        time:   [9.6997 ms 9.7287 ms 9.7553 ms]
+                        thrpt:  [10.251 Melem/s 10.279 Melem/s 10.310 Melem/s]
+                 change:
+                        time:   [-11.560% -11.058% -10.572%] (p = 0.00 < 0.05)
+                        thrpt:  [+11.822% +12.433% +13.071%]
+                        Performance has improved.
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) low mild
+
+Warning: It is not recommended to reduce nresamples below 1000.
+Benchmarking insertion/chained_hash_map_par_separated_t16/100000: Collecting 10 samples in estimated 12.074 s (1220 iterinsertion/chained_hash_map_par_separated_t16/100000
+                        time:   [9.1238 ms 9.1446 ms 9.1582 ms]
+                        thrpt:  [10.919 Melem/s 10.935 Melem/s 10.960 Melem/s]
+                 change:
+                        time:   [-23.449% -22.932% -22.461%] (p = 0.00 < 0.05)
+                        thrpt:  [+28.967% +29.756% +30.632%]
+                        Performance has improved.
+
+Warning: It is not recommended to reduce nresamples below 1000.
+Benchmarking insertion/chained_hash_map_par_separated_t2/1000000: Collecting 10 samples in estimated 10.376 s (40 iteratinsertion/chained_hash_map_par_separated_t2/1000000
+                        time:   [234.59 ms 236.13 ms 237.58 ms]
+                        thrpt:  [4.2092 Melem/s 4.2350 Melem/s 4.2627 Melem/s]
+                 change:
+                        time:   [-2.2914% -1.2883% -0.0559%] (p = 0.07 > 0.05)
+                        thrpt:  [+0.0559% +1.3051% +2.3452%]
+                        No change in performance detected.
+
+Warning: It is not recommended to reduce nresamples below 1000.
+Benchmarking insertion/chained_hash_map_par_separated_t4/1000000: Collecting 10 samples in estimated 8.7307 s (40 iteratinsertion/chained_hash_map_par_separated_t4/1000000
+                        time:   [195.93 ms 197.07 ms 199.52 ms]
+                        thrpt:  [5.0121 Melem/s 5.0743 Melem/s 5.1040 Melem/s]
+                 change:
+                        time:   [-0.0784% +0.4786% +1.7287%] (p = 0.67 > 0.05)
+                        thrpt:  [-1.6993% -0.4763% +0.0785%]
+                        No change in performance detected.
+
+Warning: It is not recommended to reduce nresamples below 1000.
+Benchmarking insertion/chained_hash_map_par_separated_t8/1000000: Collecting 10 samples in estimated 11.861 s (60 iteratinsertion/chained_hash_map_par_separated_t8/1000000
+                        time:   [173.03 ms 174.45 ms 175.67 ms]
+                        thrpt:  [5.6924 Melem/s 5.7321 Melem/s 5.7795 Melem/s]
+                 change:
+                        time:   [-2.6272% -1.5769% -1.3228%] (p = 0.07 > 0.05)
+                        thrpt:  [+1.3406% +1.6021% +2.6981%]
+                        No change in performance detected.
+
+Warning: It is not recommended to reduce nresamples below 1000.
+Benchmarking insertion/chained_hash_map_par_separated_t16/1000000: Collecting 10 samples in estimated 14.607 s (80 iterainsertion/chained_hash_map_par_separated_t16/1000000
+                        time:   [160.89 ms 161.37 ms 162.17 ms]
+                        thrpt:  [6.1664 Melem/s 6.1970 Melem/s 6.2156 Melem/s]
+                 change:
+                        time:   [-0.8112% -0.1154% +0.6374%] (p = 0.60 > 0.05)
+                        thrpt:  [-0.6334% +0.1155% +0.8178%]
+                        No change in performance detected.
+
+Warning: It is not recommended to reduce nresamples below 1000.
+Benchmarking insertion/chained_hash_map_par_separated_t2/10000000: Warming up for 2.0000 s
+Warning: Unable to complete 10 samples in 10.0s. You may wish to increase target time to 31.7s.
+Benchmarking insertion/chained_hash_map_par_separated_t2/10000000: Collecting 10 samples in estimated 31.664 s (10 iterainsertion/chained_hash_map_par_separated_t2/10000000
+                        time:   [3.0686 s 3.0783 s 3.0907 s]
+                        thrpt:  [3.2355 Melem/s 3.2486 Melem/s 3.2588 Melem/s]
+                 change:
+                        time:   [+0.6663% +1.5594% +2.2389%] (p = 0.00 < 0.05)
+                        thrpt:  [-2.1898% -1.5355% -0.6619%]
+                        Change within noise threshold.
+
+Warning: It is not recommended to reduce nresamples below 1000.
+Benchmarking insertion/chained_hash_map_par_separated_t4/10000000: Warming up for 2.0000 s
+Warning: Unable to complete 10 samples in 10.0s. You may wish to increase target time to 26.9s.
+Benchmarking insertion/chained_hash_map_par_separated_t4/10000000: Collecting 10 samples in estimated 26.858 s (10 iterainsertion/chained_hash_map_par_separated_t4/10000000
+                        time:   [2.5362 s 2.5525 s 2.5731 s]
+                        thrpt:  [3.8864 Melem/s 3.9177 Melem/s 3.9428 Melem/s]
+                 change:
+                        time:   [-0.2841% +0.6165% +1.9037%] (p = 0.33 > 0.05)
+                        thrpt:  [-1.8682% -0.6128% +0.2850%]
+                        No change in performance detected.
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high severe
+
+Warning: It is not recommended to reduce nresamples below 1000.
+Benchmarking insertion/chained_hash_map_par_separated_t8/10000000: Warming up for 2.0000 s
+Warning: Unable to complete 10 samples in 13.0s. You may wish to increase target time to 25.2s.
+Benchmarking insertion/chained_hash_map_par_separated_t8/10000000: Collecting 10 samples in estimated 25.218 s (10 iterainsertion/chained_hash_map_par_separated_t8/10000000
+                        time:   [2.3225 s 2.3426 s 2.3631 s]
+                        thrpt:  [4.2318 Melem/s 4.2688 Melem/s 4.3057 Melem/s]
+                 change:
+                        time:   [+0.4678% +1.7044% +3.3286%] (p = 0.00 < 0.05)
+                        thrpt:  [-3.2214% -1.6759% -0.4657%]
+                        Change within noise threshold.
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high severe
+
+Warning: It is not recommended to reduce nresamples below 1000.
+Benchmarking insertion/chained_hash_map_par_separated_t16/10000000: Warming up for 2.0000 s
+Warning: Unable to complete 10 samples in 16.0s. You may wish to increase target time to 22.3s.
+Benchmarking insertion/chained_hash_map_par_separated_t16/10000000: Collecting 10 samples in estimated 22.280 s (10 iterinsertion/chained_hash_map_par_separated_t16/10000000
+                        time:   [2.0756 s 2.0984 s 2.1314 s]
+                        thrpt:  [4.6918 Melem/s 4.7656 Melem/s 4.8179 Melem/s]
+                 change:
+                        time:   [+0.4161% +2.0959% +3.5944%] (p = 0.00 < 0.05)
+                        thrpt:  [-3.4697% -2.0529% -0.4143%]
+                        Change within noise threshold.
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high mild
+
+Warning: It is not recommended to reduce nresamples below 1000.
+Benchmarking insertion/chained_hash_map_par_separated_t2/25000000: Warming up for 2.0000 s
+Warning: Unable to complete 10 samples in 12.0s. You may wish to increase target time to 90.2s.
+Benchmarking insertion/chained_hash_map_par_separated_t2/25000000: Collecting 10 samples in estimated 90.171 s (10 iterainsertion/chained_hash_map_par_separated_t2/25000000
+                        time:   [9.5526 s 9.7732 s 9.9256 s]
+                        thrpt:  [2.5187 Melem/s 2.5580 Melem/s 2.6171 Melem/s]
+                 change:
+                        time:   [-4.1682% -0.0678% +2.1703%] (p = 1.00 > 0.05)
+                        thrpt:  [-2.1242% +0.0678% +4.3495%]
+                        No change in performance detected.
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) low mild
+
+Warning: It is not recommended to reduce nresamples below 1000.
+Benchmarking insertion/chained_hash_map_par_separated_t4/25000000: Warming up for 2.0000 s
+Warning: Unable to complete 10 samples in 12.0s. You may wish to increase target time to 86.2s.
+Benchmarking insertion/chained_hash_map_par_separated_t4/25000000: Collecting 10 samples in estimated 86.186 s (10 iterainsertion/chained_hash_map_par_separated_t4/25000000
+                        time:   [8.2545 s 8.2832 s 8.3058 s]
+                        thrpt:  [3.0100 Melem/s 3.0182 Melem/s 3.0286 Melem/s]
+                 change:
+                        time:   [-1.1653% -0.4809% +0.0636%] (p = 0.27 > 0.05)
+                        thrpt:  [-0.0635% +0.4832% +1.1791%]
+                        No change in performance detected.
+
+Warning: It is not recommended to reduce nresamples below 1000.
+Benchmarking insertion/chained_hash_map_par_separated_t8/25000000: Warming up for 2.0000 s
+Warning: Unable to complete 10 samples in 15.0s. You may wish to increase target time to 77.8s.
+Benchmarking insertion/chained_hash_map_par_separated_t8/25000000: Collecting 10 samples in estimated 77.840 s (10 iterainsertion/chained_hash_map_par_separated_t8/25000000
+                        time:   [7.7678 s 7.7858 s 7.8074 s]
+                        thrpt:  [3.2021 Melem/s 3.2110 Melem/s 3.2184 Melem/s]
+                 change:
+                        time:   [+0.1200% +0.6695% +0.9989%] (p = 0.00 < 0.05)
+                        thrpt:  [-0.9891% -0.6650% -0.1198%]
+                        Change within noise threshold.
+
+Warning: It is not recommended to reduce nresamples below 1000.
+Benchmarking insertion/chained_hash_map_par_separated_t16/25000000: Warming up for 2.0000 s
+Warning: Unable to complete 10 samples in 18.0s. You may wish to increase target time to 75.6s.
+Benchmarking insertion/chained_hash_map_par_separated_t16/25000000: Collecting 10 samples in estimated 75.612 s (10 iterinsertion/chained_hash_map_par_separated_t16/25000000
+                        time:   [7.3479 s 7.3665 s 7.3800 s]
+                        thrpt:  [3.3875 Melem/s 3.3938 Melem/s 3.4023 Melem/s]
+                 change:
+                        time:   [-2.1869% -1.2987% -0.4189%] (p = 0.00 < 0.05)
+                        thrpt:  [+0.4207% +1.3158% +2.2358%]
+                        Change within noise threshold.
+
+
+Warning: It is not recommended to reduce nresamples below 1000.
+Benchmarking lookup/chained_hash_map_par_separated_t2/10000: Collecting 25 samples in estimated 4.0054 s (10k iterationslookup/chained_hash_map_par_separated_t2/10000
+                        time:   [378.30 µs 380.85 µs 384.67 µs]
+                        thrpt:  [25.996 Melem/s 26.257 Melem/s 26.434 Melem/s]
+                 change:
+                        time:   [-0.1246% +0.7523% +1.9471%] (p = 0.13 > 0.05)
+                        thrpt:  [-1.9099% -0.7467% +0.1247%]
+                        No change in performance detected.
+
+Warning: It is not recommended to reduce nresamples below 1000.
+Benchmarking lookup/chained_hash_map_par_separated_t2/100000: Collecting 10 samples in estimated 6.0213 s (1430 iteratiolookup/chained_hash_map_par_separated_t2/100000
+                        time:   [4.1199 ms 4.1746 ms 4.2178 ms]
+                        thrpt:  [23.709 Melem/s 23.954 Melem/s 24.272 Melem/s]
+                 change:
+                        time:   [+0.2326% +1.8514% +2.8938%] (p = 0.00 < 0.05)
+                        thrpt:  [-2.8124% -1.8177% -0.2321%]
+                        Change within noise threshold.
+
+Warning: It is not recommended to reduce nresamples below 1000.
+Benchmarking lookup/chained_hash_map_par_separated_t2/1000000: Collecting 10 samples in estimated 8.2494 s (100 iteratiolookup/chained_hash_map_par_separated_t2/1000000
+                        time:   [82.465 ms 82.638 ms 82.814 ms]
+                        thrpt:  [12.075 Melem/s 12.101 Melem/s 12.126 Melem/s]
+                 change:
+                        time:   [-2.1669% -1.5620% -1.1119%] (p = 0.00 < 0.05)
+                        thrpt:  [+1.1244% +1.5868% +2.2148%]
+                        Performance has improved.
+Found 2 outliers among 10 measurements (20.00%)
+  1 (10.00%) low mild
+  1 (10.00%) high mild
+
+Warning: It is not recommended to reduce nresamples below 1000.
+Benchmarking lookup/chained_hash_map_par_separated_t2/10000000: Collecting 10 samples in estimated 19.505 s (20 iteratiolookup/chained_hash_map_par_separated_t2/10000000
+                        time:   [977.89 ms 981.01 ms 984.73 ms]
+                        thrpt:  [10.155 Melem/s 10.194 Melem/s 10.226 Melem/s]
+                 change:
+                        time:   [-1.9380% -1.4925% -0.9871%] (p = 0.00 < 0.05)
+                        thrpt:  [+0.9970% +1.5151% +1.9763%]
+                        Change within noise threshold.
+
+Warning: It is not recommended to reduce nresamples below 1000.
+Benchmarking lookup/chained_hash_map_par_separated_t2/25000000: Warming up for 2.0000 s
+Warning: Unable to complete 10 samples in 12.0s. You may wish to increase target time to 32.4s.
+Benchmarking lookup/chained_hash_map_par_separated_t2/25000000: Collecting 10 samples in estimated 32.358 s (10 iteratiolookup/chained_hash_map_par_separated_t2/25000000
+                        time:   [3.2130 s 3.2238 s 3.2363 s]
+                        thrpt:  [7.7249 Melem/s 7.7547 Melem/s 7.7809 Melem/s]
+                 change:
+                        time:   [-0.5981% -0.1029% +0.0638%] (p = 0.60 > 0.05)
+                        thrpt:  [-0.0638% +0.1030% +0.6017%]
+                        No change in performance detected.
+
+Warning: It is not recommended to reduce nresamples below 1000.
+Benchmarking lookup/chained_hash_map_par_separated_t4/10000: Collecting 25 samples in estimated 4.0066 s (12k iterationslookup/chained_hash_map_par_separated_t4/10000
+                        time:   [315.82 µs 319.52 µs 322.90 µs]
+                        thrpt:  [30.970 Melem/s 31.297 Melem/s 31.664 Melem/s]
+                 change:
+                        time:   [+6.1597% +7.4675% +9.1231%] (p = 0.00 < 0.05)
+                        thrpt:  [-8.3604% -6.9486% -5.8023%]
+                        Performance has regressed.
+Found 4 outliers among 25 measurements (16.00%)
+  2 (8.00%) low severe
+  1 (4.00%) high mild
+  1 (4.00%) high severe
+
+Warning: It is not recommended to reduce nresamples below 1000.
+Benchmarking lookup/chained_hash_map_par_separated_t4/100000: Collecting 10 samples in estimated 6.0169 s (2180 iteratiolookup/chained_hash_map_par_separated_t4/100000
+                        time:   [2.6842 ms 2.7077 ms 2.7309 ms]
+                        thrpt:  [36.618 Melem/s 36.932 Melem/s 37.255 Melem/s]
+                 change:
+                        time:   [+1.2623% +2.6107% +3.5749%] (p = 0.00 < 0.05)
+                        thrpt:  [-3.4515% -2.5442% -1.2466%]
+                        Performance has regressed.
+
+Warning: It is not recommended to reduce nresamples below 1000.
+Benchmarking lookup/chained_hash_map_par_separated_t4/1000000: Collecting 10 samples in estimated 8.3849 s (180 iteratiolookup/chained_hash_map_par_separated_t4/1000000
+                        time:   [46.237 ms 46.498 ms 46.635 ms]
+                        thrpt:  [21.443 Melem/s 21.506 Melem/s 21.628 Melem/s]
+                 change:
+                        time:   [-1.2751% -0.9002% -0.3466%] (p = 0.00 < 0.05)
+                        thrpt:  [+0.3478% +0.9084% +1.2916%]
+                        Change within noise threshold.
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high mild
+
+Warning: It is not recommended to reduce nresamples below 1000.
+Benchmarking lookup/chained_hash_map_par_separated_t4/10000000: Collecting 10 samples in estimated 10.360 s (20 iteratiolookup/chained_hash_map_par_separated_t4/10000000
+                        time:   [517.93 ms 520.42 ms 522.99 ms]
+                        thrpt:  [19.121 Melem/s 19.215 Melem/s 19.308 Melem/s]
+                 change:
+                        time:   [-2.4145% -1.3194% -0.3683%] (p = 0.13 > 0.05)
+                        thrpt:  [+0.3696% +1.3370% +2.4742%]
+                        No change in performance detected.
+
+Warning: It is not recommended to reduce nresamples below 1000.
+Benchmarking lookup/chained_hash_map_par_separated_t4/25000000: Warming up for 2.0000 s
+Warning: Unable to complete 10 samples in 12.0s. You may wish to increase target time to 16.9s.
+Benchmarking lookup/chained_hash_map_par_separated_t4/25000000: Collecting 10 samples in estimated 16.923 s (10 iteratiolookup/chained_hash_map_par_separated_t4/25000000
+                        time:   [1.6724 s 1.6789 s 1.6835 s]
+                        thrpt:  [14.850 Melem/s 14.891 Melem/s 14.949 Melem/s]
+                 change:
+                        time:   [-1.3005% -0.6783% -0.1923%] (p = 0.07 > 0.05)
+                        thrpt:  [+0.1927% +0.6829% +1.3177%]
+                        No change in performance detected.
+
+Warning: It is not recommended to reduce nresamples below 1000.
+Benchmarking lookup/chained_hash_map_par_separated_t8/10000: Collecting 25 samples in estimated 7.0072 s (19k iterationslookup/chained_hash_map_par_separated_t8/10000
+                        time:   [373.41 µs 375.71 µs 378.63 µs]
+                        thrpt:  [26.411 Melem/s 26.616 Melem/s 26.780 Melem/s]
+                 change:
+                        time:   [-0.5839% -0.1888% +1.0069%] (p = 0.87 > 0.05)
+                        thrpt:  [-0.9968% +0.1891% +0.5873%]
+                        No change in performance detected.
+Found 2 outliers among 25 measurements (8.00%)
+  2 (8.00%) high mild
+
+Warning: It is not recommended to reduce nresamples below 1000.
+Benchmarking lookup/chained_hash_map_par_separated_t8/100000: Collecting 10 samples in estimated 9.0074 s (4890 iteratiolookup/chained_hash_map_par_separated_t8/100000
+                        time:   [1.8279 ms 1.8348 ms 1.8410 ms]
+                        thrpt:  [54.318 Melem/s 54.502 Melem/s 54.707 Melem/s]
+                 change:
+                        time:   [-4.8870% -4.5735% -4.2202%] (p = 0.00 < 0.05)
+                        thrpt:  [+4.4061% +4.7926% +5.1381%]
+                        Performance has improved.
+
+Warning: It is not recommended to reduce nresamples below 1000.
+Benchmarking lookup/chained_hash_map_par_separated_t8/1000000: Collecting 10 samples in estimated 11.247 s (380 iteratiolookup/chained_hash_map_par_separated_t8/1000000
+                        time:   [29.650 ms 29.722 ms 29.793 ms]
+                        thrpt:  [33.565 Melem/s 33.645 Melem/s 33.727 Melem/s]
+                 change:
+                        time:   [+5.4439% +5.6414% +5.9703%] (p = 0.00 < 0.05)
+                        thrpt:  [-5.6339% -5.3402% -5.1628%]
+                        Performance has regressed.
+
+Warning: It is not recommended to reduce nresamples below 1000.
+Benchmarking lookup/chained_hash_map_par_separated_t8/10000000: Collecting 10 samples in estimated 15.632 s (50 iteratiolookup/chained_hash_map_par_separated_t8/10000000
+                        time:   [310.81 ms 311.47 ms 312.01 ms]
+                        thrpt:  [32.050 Melem/s 32.105 Melem/s 32.174 Melem/s]
+                 change:
+                        time:   [+0.5079% +0.6995% +0.8435%] (p = 0.00 < 0.05)
+                        thrpt:  [-0.8365% -0.6946% -0.5054%]
+                        Change within noise threshold.
+
+Warning: It is not recommended to reduce nresamples below 1000.
+Benchmarking lookup/chained_hash_map_par_separated_t8/25000000: Collecting 10 samples in estimated 20.876 s (20 iteratiolookup/chained_hash_map_par_separated_t8/25000000
+                        time:   [1.0212 s 1.0258 s 1.0308 s]
+                        thrpt:  [24.253 Melem/s 24.372 Melem/s 24.482 Melem/s]
+                 change:
+                        time:   [+0.3917% +0.5867% +1.3245%] (p = 0.07 > 0.05)
+                        thrpt:  [-1.3072% -0.5833% -0.3902%]
+                        No change in performance detected.
+
+Warning: It is not recommended to reduce nresamples below 1000.
+Benchmarking lookup/chained_hash_map_par_separated_t16/10000: Collecting 25 samples in estimated 10.016 s (15k iterationlookup/chained_hash_map_par_separated_t16/10000
+                        time:   [644.16 µs 648.36 µs 654.39 µs]
+                        thrpt:  [15.281 Melem/s 15.424 Melem/s 15.524 Melem/s]
+                 change:
+                        time:   [+0.6312% +1.2545% +2.3506%] (p = 0.00 < 0.05)
+                        thrpt:  [-2.2966% -1.2389% -0.6273%]
+                        Change within noise threshold.
+Found 3 outliers among 25 measurements (12.00%)
+  2 (8.00%) high mild
+  1 (4.00%) high severe
+
+Warning: It is not recommended to reduce nresamples below 1000.
+Benchmarking lookup/chained_hash_map_par_separated_t16/100000: Collecting 10 samples in estimated 12.007 s (8080 iteratilookup/chained_hash_map_par_separated_t16/100000
+                        time:   [1.4753 ms 1.4795 ms 1.4867 ms]
+                        thrpt:  [67.265 Melem/s 67.592 Melem/s 67.781 Melem/s]
+                 change:
+                        time:   [-23.253% -23.010% -22.716%] (p = 0.00 < 0.05)
+                        thrpt:  [+29.393% +29.888% +30.298%]
+                        Performance has improved.
+
+Warning: It is not recommended to reduce nresamples below 1000.
+Benchmarking lookup/chained_hash_map_par_separated_t16/1000000: Collecting 10 samples in estimated 14.068 s (750 iteratilookup/chained_hash_map_par_separated_t16/1000000
+                        time:   [18.723 ms 18.743 ms 18.771 ms]
+                        thrpt:  [53.275 Melem/s 53.353 Melem/s 53.412 Melem/s]
+                 change:
+                        time:   [+6.5515% +6.6642% +6.7813%] (p = 0.00 < 0.05)
+                        thrpt:  [-6.3507% -6.2478% -6.1487%]
+                        Performance has regressed.
+
+Warning: It is not recommended to reduce nresamples below 1000.
+Benchmarking lookup/chained_hash_map_par_separated_t16/10000000: Collecting 10 samples in estimated 16.424 s (90 iteratilookup/chained_hash_map_par_separated_t16/10000000
+                        time:   [182.56 ms 182.77 ms 182.99 ms]
+                        thrpt:  [54.648 Melem/s 54.712 Melem/s 54.776 Melem/s]
+                 change:
+                        time:   [-1.0044% -0.8375% -0.6844%] (p = 0.00 < 0.05)
+                        thrpt:  [+0.6891% +0.8446% +1.0146%]
+                        Change within noise threshold.
+
+Warning: It is not recommended to reduce nresamples below 1000.
+Benchmarking lookup/chained_hash_map_par_separated_t16/25000000: Collecting 10 samples in estimated 18.026 s (30 iteratilookup/chained_hash_map_par_separated_t16/25000000
+                        time:   [598.99 ms 600.35 ms 601.62 ms]
+                        thrpt:  [41.555 Melem/s 41.643 Melem/s 41.737 Melem/s]
+                 change:
+                        time:   [-0.4772% -0.2157% +0.0172%] (p = 0.33 > 0.05)
+                        thrpt:  [-0.0172% +0.2162% +0.4795%]
+                        No change in performance detected.
+
+
+Warning: It is not recommended to reduce nresamples below 1000.
+Benchmarking mixed_workload/chained_hash_map_mixed_par_separated_t2/10000: Collecting 25 samples in estimated 4.0103 s (mixed_workload/chained_hash_map_mixed_par_separated_t2/10000
+                        time:   [1.3463 ms 1.3596 ms 1.3759 ms]
+                        thrpt:  [7.2678 Melem/s 7.3552 Melem/s 7.4278 Melem/s]
+                 change:
+                        time:   [-4.0012% -3.2123% -2.4604%] (p = 0.00 < 0.05)
+                        thrpt:  [+2.5224% +3.3189% +4.1680%]
+                        Performance has improved.
+Found 5 outliers among 25 measurements (20.00%)
+  2 (8.00%) low mild
+  2 (8.00%) high mild
+  1 (4.00%) high severe
+
+Warning: It is not recommended to reduce nresamples below 1000.
+Benchmarking mixed_workload/chained_hash_map_mixed_par_separated_t2/100000: Collecting 10 samples in estimated 6.0243 s mixed_workload/chained_hash_map_mixed_par_separated_t2/100000
+                        time:   [14.593 ms 14.674 ms 14.790 ms]
+                        thrpt:  [6.7612 Melem/s 6.8150 Melem/s 6.8527 Melem/s]
+                 change:
+                        time:   [-4.5084% -3.9418% -3.6819%] (p = 0.00 < 0.05)
+                        thrpt:  [+3.8227% +4.1035% +4.7213%]
+                        Performance has improved.
+
+Warning: It is not recommended to reduce nresamples below 1000.
+Benchmarking mixed_workload/chained_hash_map_mixed_par_separated_t2/1000000: Collecting 10 samples in estimated 9.9055 smixed_workload/chained_hash_map_mixed_par_separated_t2/1000000
+                        time:   [219.06 ms 219.62 ms 220.58 ms]
+                        thrpt:  [4.5334 Melem/s 4.5533 Melem/s 4.5649 Melem/s]
+                 change:
+                        time:   [-0.7007% -0.2931% -0.1718%] (p = 0.60 > 0.05)
+                        thrpt:  [+0.1721% +0.2939% +0.7057%]
+                        No change in performance detected.
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high mild
+
+Warning: It is not recommended to reduce nresamples below 1000.
+Benchmarking mixed_workload/chained_hash_map_mixed_par_separated_t2/10000000: Warming up for 2.0000 s
+Warning: Unable to complete 10 samples in 10.0s. You may wish to increase target time to 29.3s.
+Benchmarking mixed_workload/chained_hash_map_mixed_par_separated_t2/10000000: Collecting 10 samples in estimated 29.258 mixed_workload/chained_hash_map_mixed_par_separated_t2/10000000
+                        time:   [2.6089 s 2.6195 s 2.6369 s]
+                        thrpt:  [3.7923 Melem/s 3.8175 Melem/s 3.8330 Melem/s]
+                 change:
+                        time:   [-0.2788% +0.0994% +0.9288%] (p = 0.93 > 0.05)
+                        thrpt:  [-0.9203% -0.0993% +0.2796%]
+                        No change in performance detected.
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high mild
+
+Warning: It is not recommended to reduce nresamples below 1000.
+Benchmarking mixed_workload/chained_hash_map_mixed_par_separated_t2/25000000: Warming up for 2.0000 s
+Warning: Unable to complete 10 samples in 12.0s. You may wish to increase target time to 78.6s.
+Benchmarking mixed_workload/chained_hash_map_mixed_par_separated_t2/25000000: Collecting 10 samples in estimated 78.638 mixed_workload/chained_hash_map_mixed_par_separated_t2/25000000
+                        time:   [7.6859 s 7.7275 s 7.7731 s]
+                        thrpt:  [3.2162 Melem/s 3.2352 Melem/s 3.2527 Melem/s]
+                 change:
+                        time:   [-1.3533% -0.5989% -0.0309%] (p = 0.33 > 0.05)
+                        thrpt:  [+0.0310% +0.6025% +1.3719%]
+                        No change in performance detected.
+
+Warning: It is not recommended to reduce nresamples below 1000.
+Benchmarking mixed_workload/chained_hash_map_mixed_par_separated_t4/10000: Collecting 25 samples in estimated 4.0013 s (mixed_workload/chained_hash_map_mixed_par_separated_t4/10000
+                        time:   [1.0073 ms 1.0191 ms 1.0313 ms]
+                        thrpt:  [9.6962 Melem/s 9.8125 Melem/s 9.9271 Melem/s]
+                 change:
+                        time:   [-3.4523% -2.2472% -0.9060%] (p = 0.00 < 0.05)
+                        thrpt:  [+0.9142% +2.2989% +3.5757%]
+                        Change within noise threshold.
+Found 4 outliers among 25 measurements (16.00%)
+  2 (8.00%) low mild
+  1 (4.00%) high mild
+  1 (4.00%) high severe
+
+Warning: It is not recommended to reduce nresamples below 1000.
+Benchmarking mixed_workload/chained_hash_map_mixed_par_separated_t4/100000: Collecting 10 samples in estimated 6.0688 s mixed_workload/chained_hash_map_mixed_par_separated_t4/100000
+                        time:   [9.3462 ms 9.4358 ms 9.5226 ms]
+                        thrpt:  [10.501 Melem/s 10.598 Melem/s 10.700 Melem/s]
+                 change:
+                        time:   [-11.201% -9.1948% -7.8726%] (p = 0.00 < 0.05)
+                        thrpt:  [+8.5453% +10.126% +12.613%]
+                        Performance has improved.
+
+Warning: It is not recommended to reduce nresamples below 1000.
+Benchmarking mixed_workload/chained_hash_map_mixed_par_separated_t4/1000000: Collecting 10 samples in estimated 8.5119 smixed_workload/chained_hash_map_mixed_par_separated_t4/1000000
+                        time:   [145.04 ms 146.39 ms 147.72 ms]
+                        thrpt:  [6.7695 Melem/s 6.8311 Melem/s 6.8948 Melem/s]
+                 change:
+                        time:   [-2.9869% -1.7673% -1.0651%] (p = 0.00 < 0.05)
+                        thrpt:  [+1.0766% +1.7991% +3.0789%]
+                        Performance has improved.
+
+Warning: It is not recommended to reduce nresamples below 1000.
+Benchmarking mixed_workload/chained_hash_map_mixed_par_separated_t4/10000000: Warming up for 2.0000 s
+Warning: Unable to complete 10 samples in 10.0s. You may wish to increase target time to 20.0s.
+Benchmarking mixed_workload/chained_hash_map_mixed_par_separated_t4/10000000: Collecting 10 samples in estimated 20.014 mixed_workload/chained_hash_map_mixed_par_separated_t4/10000000
+                        time:   [1.7048 s 1.7127 s 1.7252 s]
+                        thrpt:  [5.7964 Melem/s 5.8388 Melem/s 5.8659 Melem/s]
+                 change:
+                        time:   [-1.8926% -1.2278% -0.4770%] (p = 0.00 < 0.05)
+                        thrpt:  [+0.4793% +1.2430% +1.9291%]
+                        Change within noise threshold.
+Found 2 outliers among 10 measurements (20.00%)
+  1 (10.00%) low mild
+  1 (10.00%) high mild
+
+Warning: It is not recommended to reduce nresamples below 1000.
+Benchmarking mixed_workload/chained_hash_map_mixed_par_separated_t4/25000000: Warming up for 2.0000 s
+Warning: Unable to complete 10 samples in 12.0s. You may wish to increase target time to 49.8s.
+Benchmarking mixed_workload/chained_hash_map_mixed_par_separated_t4/25000000: Collecting 10 samples in estimated 49.834 mixed_workload/chained_hash_map_mixed_par_separated_t4/25000000
+                        time:   [4.9150 s 4.9524 s 5.0137 s]
+                        thrpt:  [4.9864 Melem/s 5.0481 Melem/s 5.0864 Melem/s]
+                 change:
+                        time:   [-1.8559% -0.6429% +0.2673%] (p = 0.13 > 0.05)
+                        thrpt:  [-0.2666% +0.6470% +1.8910%]
+                        No change in performance detected.
+
+Warning: It is not recommended to reduce nresamples below 1000.
+Benchmarking mixed_workload/chained_hash_map_mixed_par_separated_t8/10000: Collecting 25 samples in estimated 7.0149 s (mixed_workload/chained_hash_map_mixed_par_separated_t8/10000
+                        time:   [1.0607 ms 1.0647 ms 1.0693 ms]
+                        thrpt:  [9.3516 Melem/s 9.3922 Melem/s 9.4276 Melem/s]
+                 change:
+                        time:   [-3.0795% -2.5833% -2.2637%] (p = 0.00 < 0.05)
+                        thrpt:  [+2.3162% +2.6518% +3.1774%]
+                        Performance has improved.
+Found 1 outliers among 25 measurements (4.00%)
+  1 (4.00%) high mild
+
+Warning: It is not recommended to reduce nresamples below 1000.
+Benchmarking mixed_workload/chained_hash_map_mixed_par_separated_t8/100000: Collecting 10 samples in estimated 9.0236 s mixed_workload/chained_hash_map_mixed_par_separated_t8/100000
+                        time:   [7.9031 ms 7.9246 ms 7.9336 ms]
+                        thrpt:  [12.605 Melem/s 12.619 Melem/s 12.653 Melem/s]
+                 change:
+                        time:   [-10.423% -10.111% -9.9135%] (p = 0.00 < 0.05)
+                        thrpt:  [+11.004% +11.248% +11.635%]
+                        Performance has improved.
+
+Warning: It is not recommended to reduce nresamples below 1000.
+Benchmarking mixed_workload/chained_hash_map_mixed_par_separated_t8/1000000: Collecting 10 samples in estimated 12.180 smixed_workload/chained_hash_map_mixed_par_separated_t8/1000000
+                        time:   [113.06 ms 114.12 ms 114.76 ms]
+                        thrpt:  [8.7138 Melem/s 8.7626 Melem/s 8.8451 Melem/s]
+                 change:
+                        time:   [-1.7836% -1.0660% -0.1123%] (p = 0.20 > 0.05)
+                        thrpt:  [+0.1124% +1.0775% +1.8160%]
+                        No change in performance detected.
+
+Warning: It is not recommended to reduce nresamples below 1000.
+Benchmarking mixed_workload/chained_hash_map_mixed_par_separated_t8/10000000: Warming up for 2.0000 s
+Warning: Unable to complete 10 samples in 13.0s. You may wish to increase target time to 14.9s.
+Benchmarking mixed_workload/chained_hash_map_mixed_par_separated_t8/10000000: Collecting 10 samples in estimated 14.905 mixed_workload/chained_hash_map_mixed_par_separated_t8/10000000
+                        time:   [1.3133 s 1.3289 s 1.3424 s]
+                        thrpt:  [7.4494 Melem/s 7.5249 Melem/s 7.6141 Melem/s]
+                 change:
+                        time:   [-0.9363% +0.1043% +1.8483%] (p = 0.87 > 0.05)
+                        thrpt:  [-1.8148% -0.1042% +0.9451%]
+                        No change in performance detected.
+
+Warning: It is not recommended to reduce nresamples below 1000.
+Benchmarking mixed_workload/chained_hash_map_mixed_par_separated_t8/25000000: Warming up for 2.0000 s
+Warning: Unable to complete 10 samples in 15.0s. You may wish to increase target time to 36.3s.
+Benchmarking mixed_workload/chained_hash_map_mixed_par_separated_t8/25000000: Collecting 10 samples in estimated 36.284 mixed_workload/chained_hash_map_mixed_par_separated_t8/25000000
+                        time:   [3.5761 s 3.6041 s 3.6272 s]
+                        thrpt:  [6.8923 Melem/s 6.9366 Melem/s 6.9909 Melem/s]
+                 change:
+                        time:   [-2.4908% -1.2365% -0.1373%] (p = 0.20 > 0.05)
+                        thrpt:  [+0.1374% +1.2520% +2.5544%]
+                        No change in performance detected.
+
+Warning: It is not recommended to reduce nresamples below 1000.
+Benchmarking mixed_workload/chained_hash_map_mixed_par_separated_t16/10000: Collecting 25 samples in estimated 10.013 s mixed_workload/chained_hash_map_mixed_par_separated_t16/10000
+                        time:   [1.2078 ms 1.2126 ms 1.2184 ms]
+                        thrpt:  [8.2078 Melem/s 8.2469 Melem/s 8.2798 Melem/s]
+                 change:
+                        time:   [-3.2696% -2.3684% -1.9312%] (p = 0.00 < 0.05)
+                        thrpt:  [+1.9693% +2.4258% +3.3802%]
+                        Performance has improved.
+
+Warning: It is not recommended to reduce nresamples below 1000.
+Benchmarking mixed_workload/chained_hash_map_mixed_par_separated_t16/100000: Collecting 10 samples in estimated 12.078 smixed_workload/chained_hash_map_mixed_par_separated_t16/100000
+                        time:   [7.1037 ms 7.1139 ms 7.1246 ms]
+                        thrpt:  [14.036 Melem/s 14.057 Melem/s 14.077 Melem/s]
+                 change:
+                        time:   [-27.236% -27.056% -26.865%] (p = 0.00 < 0.05)
+                        thrpt:  [+36.733% +37.091% +37.431%]
+                        Performance has improved.
+
+Warning: It is not recommended to reduce nresamples below 1000.
+Benchmarking mixed_workload/chained_hash_map_mixed_par_separated_t16/1000000: Collecting 10 samples in estimated 14.102 mixed_workload/chained_hash_map_mixed_par_separated_t16/1000000
+                        time:   [93.510 ms 94.382 ms 95.535 ms]
+                        thrpt:  [10.467 Melem/s 10.595 Melem/s 10.694 Melem/s]
+                 change:
+                        time:   [-2.9152% -1.4046% -0.2166%] (p = 0.13 > 0.05)
+                        thrpt:  [+0.2171% +1.4246% +3.0027%]
+                        No change in performance detected.
+Found 2 outliers among 10 measurements (20.00%)
+  2 (20.00%) high mild
+
+Warning: It is not recommended to reduce nresamples below 1000.
+Benchmarking mixed_workload/chained_hash_map_mixed_par_separated_t16/10000000: Collecting 10 samples in estimated 25.542mixed_workload/chained_hash_map_mixed_par_separated_t16/10000000
+                        time:   [1.0896 s 1.1008 s 1.1195 s]
+                        thrpt:  [8.9324 Melem/s 9.0846 Melem/s 9.1776 Melem/s]
+                 change:
+                        time:   [-1.5198% -0.7523% +0.3777%] (p = 0.53 > 0.05)
+                        thrpt:  [-0.3763% +0.7580% +1.5433%]
+                        No change in performance detected.
+
+Warning: It is not recommended to reduce nresamples below 1000.
+Benchmarking mixed_workload/chained_hash_map_mixed_par_separated_t16/25000000: Warming up for 2.0000 s
+Warning: Unable to complete 10 samples in 18.0s. You may wish to increase target time to 30.0s.
+Benchmarking mixed_workload/chained_hash_map_mixed_par_separated_t16/25000000: Collecting 10 samples in estimated 29.969mixed_workload/chained_hash_map_mixed_par_separated_t16/25000000
+                        time:   [2.9480 s 3.0123 s 3.0714 s]
+                        thrpt:  [8.1396 Melem/s 8.2993 Melem/s 8.4803 Melem/s]
+                 change:
+                        time:   [-3.7443% -0.8283% +0.0903%] (p = 0.67 > 0.05)
+                        thrpt:  [-0.0902% +0.8352% +3.8899%]
+                        No change in performance detected.
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) low mild
+
