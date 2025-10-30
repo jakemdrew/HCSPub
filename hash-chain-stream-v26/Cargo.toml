@@ -1,0 +1,40 @@
+[package]
+name = "HashChainStream"  # or change to "hash-chain-stream" if you prefer
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "hash_chain_stream"
+path = "src/lib.rs"
+
+[dependencies]
+blake2 = "0.10"
+xxhash-rust = { version = "0.8", features = ["xxh3"] }
+parking_lot = "0.12"
+
+[dev-dependencies]
+criterion = { version = "0.5", features = ["html_reports"] }
+rand = "0.8"
+ahash = "0.8"
+
+[[bench]]
+name = "hca_benchmarks"
+harness = false
+
+[[bench]]
+name = "migration_benchmarks"
+harness = false
+
+[profile.release]
+opt-level = 3
+lto = "thin"
+codegen-units = 1
+panic = "abort"
+strip = "symbols"
+
+[profile.bench]
+opt-level = 3
+lto = "thin"
+codegen-units = 1
+debug = false
+incremental = false

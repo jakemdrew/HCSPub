@@ -1,0 +1,229 @@
+migration/simple_chained_hash_map/2x_capacity/10000
+                        time:   [625.04 µs 625.88 µs 626.77 µs]
+                        thrpt:  [15.955 Melem/s 15.977 Melem/s 15.999 Melem/s]
+                 change:
+                        time:   [-3.5103% -2.9489% -2.2965%] (p = 0.00 < 0.05)
+                        thrpt:  [+2.3504% +3.0385% +3.6380%]
+                        Performance has improved.
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high severe
+migration/simple_chained_hash_map/4x_capacity/10000
+                        time:   [666.76 µs 667.60 µs 668.25 µs]
+                        thrpt:  [14.965 Melem/s 14.979 Melem/s 14.998 Melem/s]
+                 change:
+                        time:   [-1.7873% -1.2585% -0.7091%] (p = 0.00 < 0.05)
+                        thrpt:  [+0.7142% +1.2745% +1.8199%]
+                        Change within noise threshold.
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high severe
+
+migration/simple_chained_hash_map/2x_capacity/100000
+                        time:   [8.8059 ms 8.8334 ms 8.8653 ms]
+                        thrpt:  [11.280 Melem/s 11.321 Melem/s 11.356 Melem/s]
+                 change:
+                        time:   [-0.3995% +0.4312% +1.2907%] (p = 0.36 > 0.05)
+                        thrpt:  [-1.2742% -0.4293% +0.4011%]
+                        No change in performance detected.
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high mild
+migration/simple_chained_hash_map/4x_capacity/100000
+                        time:   [16.037 ms 16.108 ms 16.208 ms]
+                        thrpt:  [6.1699 Melem/s 6.2081 Melem/s 6.2354 Melem/s]
+                 change:
+                        time:   [-3.5247% -1.2979% +0.4572%] (p = 0.28 > 0.05)
+                        thrpt:  [-0.4552% +1.3150% +3.6535%]
+                        No change in performance detected.
+
+migration/simple_chained_hash_map/2x_capacity/1000000
+                        time:   [205.62 ms 208.46 ms 211.01 ms]
+                        thrpt:  [4.7392 Melem/s 4.7971 Melem/s 4.8633 Melem/s]
+                 change:
+                        time:   [-1.7487% +0.1394% +2.0904%] (p = 0.89 > 0.05)
+                        thrpt:  [-2.0476% -0.1392% +1.7798%]
+                        No change in performance detected.
+migration/simple_chained_hash_map/4x_capacity/1000000
+                        time:   [245.83 ms 252.81 ms 259.78 ms]
+                        thrpt:  [3.8494 Melem/s 3.9556 Melem/s 4.0679 Melem/s]
+                 change:
+                        time:   [-4.2832% -0.4811% +3.4464%] (p = 0.83 > 0.05)
+                        thrpt:  [-3.3316% +0.4835% +4.4749%]
+                        No change in performance detected.
+
+Benchmarking migration/simple_chained_hash_map/2x_capacity/10000000: Warming up for 3.0000 s
+Warning: Unable to complete 10 samples in 5.0s. You may wish to increase target time to 21.6s.
+migration/simple_chained_hash_map/2x_capacity/10000000
+                        time:   [2.1315 s 2.1409 s 2.1520 s]
+                        thrpt:  [4.6469 Melem/s 4.6710 Melem/s 4.6914 Melem/s]
+                 change:
+                        time:   [-0.4826% +0.1879% +0.8616%] (p = 0.62 > 0.05)
+                        thrpt:  [-0.8543% -0.1876% +0.4849%]
+                        No change in performance detected.
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high severe
+Benchmarking migration/simple_chained_hash_map/4x_capacity/10000000: Warming up for 3.0000 s
+Warning: Unable to complete 10 samples in 5.0s. You may wish to increase target time to 25.0s.
+migration/simple_chained_hash_map/4x_capacity/10000000
+                        time:   [2.5125 s 2.5467 s 2.5790 s]
+                        thrpt:  [3.8775 Melem/s 3.9267 Melem/s 3.9801 Melem/s]
+                 change:
+                        time:   [-1.1610% +0.7694% +2.7874%] (p = 0.48 > 0.05)
+                        thrpt:  [-2.7118% -0.7636% +1.1746%]
+                        No change in performance detected.
+
+migration/chained_hash_map/2x_capacity/10000
+                        time:   [2.9981 ms 3.0052 ms 3.0141 ms]
+                        thrpt:  [3.3177 Melem/s 3.3276 Melem/s 3.3354 Melem/s]
+                 change:
+                        time:   [+2.0833% +3.0315% +4.2576%] (p = 0.00 < 0.05)
+                        thrpt:  [-4.0838% -2.9423% -2.0408%]
+                        Performance has regressed.
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high severe
+migration/chained_hash_map/4x_capacity/10000
+                        time:   [3.1338 ms 3.1412 ms 3.1497 ms]
+                        thrpt:  [3.1749 Melem/s 3.1835 Melem/s 3.1911 Melem/s]
+                 change:
+                        time:   [+2.0236% +2.6609% +3.3223%] (p = 0.00 < 0.05)
+                        thrpt:  [-3.2154% -2.5920% -1.9834%]
+                        Performance has regressed.
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high mild
+
+migration/chained_hash_map/2x_capacity/100000
+                        time:   [8.9808 ms 9.0046 ms 9.0305 ms]
+                        thrpt:  [11.074 Melem/s 11.105 Melem/s 11.135 Melem/s]
+                 change:
+                        time:   [-0.4043% +0.0722% +0.5827%] (p = 0.79 > 0.05)
+                        thrpt:  [-0.5793% -0.0722% +0.4059%]
+                        No change in performance detected.
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high mild
+migration/chained_hash_map/4x_capacity/100000
+                        time:   [11.951 ms 12.010 ms 12.065 ms]
+                        thrpt:  [8.2885 Melem/s 8.3267 Melem/s 8.3675 Melem/s]
+                 change:
+                        time:   [-0.3789% +0.2797% +0.9284%] (p = 0.45 > 0.05)
+                        thrpt:  [-0.9199% -0.2789% +0.3803%]
+                        No change in performance detected.
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high mild
+
+migration/chained_hash_map/2x_capacity/1000000
+                        time:   [70.998 ms 71.734 ms 73.162 ms]
+                        thrpt:  [13.668 Melem/s 13.940 Melem/s 14.085 Melem/s]
+                 change:
+                        time:   [-2.8803% -1.8086% -0.6405%] (p = 0.01 < 0.05)
+                        thrpt:  [+0.6447% +1.8419% +2.9657%]
+                        Change within noise threshold.
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high mild
+Benchmarking migration/chained_hash_map/4x_capacity/1000000: Warming up for 3.0000 s
+Warning: Unable to complete 10 samples in 5.0s. You may wish to increase target time to 7.2s or enable flat sampling.
+migration/chained_hash_map/4x_capacity/1000000
+                        time:   [130.21 ms 132.25 ms 135.21 ms]
+                        thrpt:  [7.3961 Melem/s 7.5615 Melem/s 7.6797 Melem/s]
+                 change:
+                        time:   [-7.9368% -1.7712% +4.1738%] (p = 0.61 > 0.05)
+                        thrpt:  [-4.0066% +1.8031% +8.6210%]
+                        No change in performance detected.
+
+Benchmarking migration/chained_hash_map/2x_capacity/10000000: Warming up for 3.0000 s
+Warning: Unable to complete 10 samples in 5.0s. You may wish to increase target time to 7.9s.
+migration/chained_hash_map/2x_capacity/10000000
+                        time:   [806.41 ms 819.18 ms 829.01 ms]
+                        thrpt:  [12.063 Melem/s 12.207 Melem/s 12.401 Melem/s]
+                 change:
+                        time:   [-1.1215% +1.1866% +3.5703%] (p = 0.36 > 0.05)
+                        thrpt:  [-3.4473% -1.1727% +1.1343%]
+                        No change in performance detected.
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) low severe
+Benchmarking migration/chained_hash_map/4x_capacity/10000000: Warming up for 3.0000 s
+Warning: Unable to complete 10 samples in 5.0s. You may wish to increase target time to 11.1s.
+migration/chained_hash_map/4x_capacity/10000000
+                        time:   [1.1194 s 1.1490 s 1.1856 s]
+                        thrpt:  [8.4349 Melem/s 8.7031 Melem/s 8.9337 Melem/s]
+                 change:
+                        time:   [-3.7452% +0.0665% +4.2669%] (p = 0.98 > 0.05)
+                        thrpt:  [-4.0923% -0.0665% +3.8909%]
+                        No change in performance detected.
+Found 2 outliers among 10 measurements (20.00%)
+  2 (20.00%) high mild
+
+Benchmarking migration/chained_shard_change/500k_to_5m: Warming up for 3.0000 s
+Warning: Unable to complete 10 samples in 5.0s. You may wish to increase target time to 6.2s or enable flat sampling.
+migration/chained_shard_change/500k_to_5m
+                        time:   [108.92 ms 112.05 ms 115.16 ms]
+                        thrpt:  [4.3416 Melem/s 4.4622 Melem/s 4.5907 Melem/s]
+                 change:
+                        time:   [-10.602% -2.2272% +6.1759%] (p = 0.64 > 0.05)
+                        thrpt:  [-5.8167% +2.2779% +11.860%]
+                        No change in performance detected.
+
+migration_vs_rebuild/100000/simple_migration
+                        time:   [9.2993 ms 9.3322 ms 9.3735 ms]
+                        thrpt:  [10.668 Melem/s 10.716 Melem/s 10.753 Melem/s]
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high mild
+migration_vs_rebuild/100000/simple_rebuild
+                        time:   [11.953 ms 11.991 ms 12.040 ms]
+                        thrpt:  [8.3055 Melem/s 8.3393 Melem/s 8.3663 Melem/s]
+Found 2 outliers among 10 measurements (20.00%)
+  1 (10.00%) high mild
+  1 (10.00%) high severe
+migration_vs_rebuild/100000/chained_migration
+                        time:   [9.5888 ms 9.6443 ms 9.7105 ms]
+                        thrpt:  [10.298 Melem/s 10.369 Melem/s 10.429 Melem/s]
+migration_vs_rebuild/100000/chained_rebuild
+                        time:   [20.339 ms 20.392 ms 20.464 ms]
+                        thrpt:  [4.8865 Melem/s 4.9040 Melem/s 4.9166 Melem/s]
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high mild
+migration_vs_rebuild/100000/std_hashmap_rebuild
+                        time:   [19.948 ms 20.039 ms 20.146 ms]
+                        thrpt:  [4.9638 Melem/s 4.9903 Melem/s 5.0131 Melem/s]
+migration_vs_rebuild/100000/ahashmap_rebuild
+                        time:   [19.569 ms 19.737 ms 19.889 ms]
+                        thrpt:  [5.0278 Melem/s 5.0667 Melem/s 5.1102 Melem/s]
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high mild
+
+migration_vs_rebuild/1000000/simple_migration
+                        time:   [204.49 ms 207.45 ms 210.29 ms]
+                        thrpt:  [4.7553 Melem/s 4.8205 Melem/s 4.8902 Melem/s]
+migration_vs_rebuild/1000000/simple_rebuild
+                        time:   [323.31 ms 326.29 ms 328.93 ms]
+                        thrpt:  [3.0401 Melem/s 3.0648 Melem/s 3.0930 Melem/s]
+migration_vs_rebuild/1000000/chained_migration
+                        time:   [68.555 ms 69.032 ms 70.070 ms]
+                        thrpt:  [14.271 Melem/s 14.486 Melem/s 14.587 Melem/s]
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high severe
+migration_vs_rebuild/1000000/chained_rebuild
+                        time:   [319.74 ms 320.03 ms 320.35 ms]
+                        thrpt:  [3.1216 Melem/s 3.1247 Melem/s 3.1276 Melem/s]
+migration_vs_rebuild/1000000/std_hashmap_rebuild
+                        time:   [448.12 ms 449.01 ms 449.88 ms]
+                        thrpt:  [2.2228 Melem/s 2.2271 Melem/s 2.2316 Melem/s]
+migration_vs_rebuild/1000000/ahashmap_rebuild
+                        time:   [447.05 ms 447.95 ms 449.16 ms]
+                        thrpt:  [2.2264 Melem/s 2.2324 Melem/s 2.2369 Melem/s]
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high severe
+
+all_maps_comparison/simple_chained_migration
+                        time:   [205.62 ms 208.47 ms 211.23 ms]
+                        thrpt:  [4.7341 Melem/s 4.7970 Melem/s 4.8634 Melem/s]
+all_maps_comparison/chained_migration
+                        time:   [68.694 ms 69.077 ms 70.010 ms]
+                        thrpt:  [14.284 Melem/s 14.477 Melem/s 14.557 Melem/s]
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high severe
+all_maps_comparison/std_hashmap_rebuild
+                        time:   [448.46 ms 449.93 ms 451.31 ms]
+                        thrpt:  [2.2158 Melem/s 2.2226 Melem/s 2.2298 Melem/s]
+all_maps_comparison/ahashmap_rebuild
+                        time:   [452.63 ms 453.74 ms 455.24 ms]
+                        thrpt:  [2.1966 Melem/s 2.2039 Melem/s 2.2093 Melem/s]
+Found 1 outliers among 10 measurements (10.00%)
+  1 (10.00%) high mild
