@@ -54,6 +54,10 @@ Jacob Michael Drew • jakemdrew@gmail.com
 
 **Support:** HCA relates to hash-based in-memory and persistent data structures, concurrent key-value indexing, and fault-tolerant state management for distributed systems including blockchain nodes.
 
+### Patent 8 (U.S. Provisional No. 63/908,115) — Systems and Methods for Infinite Entropy Hash Tables and Blockchain State Management via Hash Chain Augmentation
+**Filed:** October 30, 2025  
+**Support:** Infinite Entropy Hash Tables (IEHT) using Hash Chain Streams (HCS) to eliminate rehashing during capacity changes. Covers zero-rehash migration, deterministic reconstruction from cached hashes, adaptive sharding for parallel implementations, and blockchain applications including node recovery from corruption (affecting 74.9% of Ethereum nodes), sub-minute validator failover, shard rebalancing, state channel migration, and cross-shard transaction optimization. Challenges Knuth's 50-year assumption that hash digests must be fixed-width by providing unbounded prefix-stable entropy streams.
+
 ## Usage Restrictions
 
 No license granted. You may not reproduce, distribute, sublicense, or create derivative works.
